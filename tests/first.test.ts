@@ -2,6 +2,6 @@ import { test } from "@playwright/test";
 
 test.describe("Описание группы теста", async () => {
     test("Я пишу тест", async () => {
-        console.log("Мой первый тест!");
+        console.log("Мой 234234первый тест!");
     })
 })
