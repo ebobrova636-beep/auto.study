@@ -20,7 +20,7 @@ test.describe("API-тесты на получения списка клубов"
         expect(response.status()).toEqual(200);
     });
 
-    test("[negative] получить список клубов с неверным токеном", async ({ request }) => {
+    test("[negative] получить список клубов без обязательного параметра", async ({ request }) => {
         const response = await request.get(
             `${api.urls.base_url_api}${api.paths.clubs}`,
             {
